@@ -35,11 +35,24 @@
         android:id="@+id/imageButtonBackArrowDetail"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_margin="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
         android:background="@android:color/transparent"
         android:src="@drawable/back_arrow"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:contentDescription="Back to preview screen" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RVNumberDetailPreviewDescription"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        tools:listitem="@layout/item_numbers_detail"
+        app:layout_constraintTop_toBottomOf="@id/textViewDescriptionDetail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
